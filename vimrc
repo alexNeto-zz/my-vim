@@ -1,4 +1,6 @@
+#plugin management
 execute pathogen#infect()
+#basic configs
 set noshowmode
 filetype on
 syntax on
@@ -27,12 +29,15 @@ set expandtab
 set smartindent
 set autoindent
 set showmatch
+#nerd tree configs
 let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeIgnome=['\.DS_Store', '\~$', '\.swp']
+#git gutter config
 let g:gitgutter_sign_column_always=1
+#lightline configs
 set laststatus=2
 if !has('gui_running')
   set t_Co=256
